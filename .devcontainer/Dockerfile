@@ -1,6 +1,7 @@
-FROM registry.suse.com/bci/nodejs:20
+FROM dp.apps.rancher.io/containers/nodejs:20-dev
+# Needs authentication - see https://apps.rancher.io/settings/access-tokens
 
-RUN zypper --non-interactive install -y tar git gzip openssh make
+RUN zypper --non-interactive install -y git openssh make awk
 RUN useradd -ms /bin/bash node
 
 ARG USERNAME=node
