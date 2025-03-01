@@ -1,4 +1,4 @@
-FROM dp.apps.rancher.io/containers/nodejs:20-dev
+FROM dp.apps.rancher.io/containers/nodejs:22-dev
 # Needs authentication - see https://apps.rancher.io/settings/access-tokens
 
 RUN zypper --non-interactive install -y git openssh make awk
