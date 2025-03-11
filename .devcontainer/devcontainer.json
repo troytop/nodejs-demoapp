@@ -1,8 +1,6 @@
 {
   "name": "Node.js",
-  "build": {
-    "dockerfile": "Dockerfile"
-  },
+  "image" "registry.rigel.lab.geeko.me/library/node-demo:0.0.1",
 
   "customizations": {
     "vscode": {
